@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habit Tracker Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="bg-[#f8f8f8] backdrop-blur shadow-2xl">
+      <div class="flex flex-wrap items-center justify-between p-5">
+        <a
+          href="#"
+          class="flex items-center justify-between space-x-3 rtl:space-x-reverse"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#00503c"
+          >
+            <path
+              d="m826-585-56-56 30-31-128-128-31 30-57-57 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L104-233q-23-23-23-56.5t23-56.5l30-30 57 57-31 30 129 129 30-31 57 57-30 30Zm397-336 57-57-303-303-57 57 303 303ZM463-160l57-58-302-302-58 57 303 303Zm-6-234 110-109-64-64-109 110 63 63Zm63 290q-23 23-57 23t-57-23L104-406q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l63 63 110-110-63-62q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l303 303q23 23 23 56.5T857-441l-57 57q-23 23-57 23t-57-23l-62-63-110 110 63 63q23 23 23 56.5T577-161l-57 57Z"
+            />
+          </svg>
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-[#00503c]"
+            >Pinoy Health Buddy</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="mainPage.html"
+                class="block py-2 px-3 text-[#00503c] bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="About.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="Services.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="profilePage.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="Contacts.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="h-[100vh]">
+      <!-- --------------------------------LIVE BG START------------------------------->
+
+      <div class="area" id="liveBG">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- --------------------------------LIVE BG END------------------------------->
+      <!----------------------------------LOGIN FORMS START------------------------------->
+
+      <div class="flex justify-center items-center min-h-screen flex-grow">
+        <div
+          class="grid grid-cols-1 grid-rows-2 gap-4 portrait:gap-0"
+          id="mainContainer"
+        >
+          <div class="text-white flex flex-col justify-center items-center">
+            <p
+              class="text-[2.5rem] portrait:text-[1.5rem] text-shadow-black text-shadow-sm mainText"
+            >
+              PINOY
+            </p>
+            <p
+              class="text-[2.5rem] portrait:text-[1.5rem] text-shadow-black text-shadow-sm mainText"
+            >
+              HEALTH
+            </p>
+            <p
+              class="text-[2.5rem] portrait:text-[1.5rem] text-shadow-black text-shadow-sm mainText"
+            >
+              BUDDY
+            </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 -960 960 960"
+              fill="#e3e3e3"
+              class="portrait:w-[40px] w-[70px] mainText"
+            >
+              <path
+                d="M200-200v-560 454-85 191Zm0 80q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v320h-80v-320H200v560h280v80H200Zm494 40L552-222l57-56 85 85 170-170 56 57L694-80ZM320-440q17 0 28.5-11.5T360-480q0-17-11.5-28.5T320-520q-17 0-28.5 11.5T280-480q0 17 11.5 28.5T320-440Zm0-160q17 0 28.5-11.5T360-640q0-17-11.5-28.5T320-680q-17 0-28.5 11.5T280-640q0 17 11.5 28.5T320-600Zm120 160h240v-80H440v80Zm0-160h240v-80H440v80Z"
+              />
+            </svg>
+            <p class="text-shadow-black text-shadow-sm mainText">
+              Simple. Healthy. Lokal.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-lg shadow-lg p-6 w-[90vw] max-w-md"
+            id="loginForm"
+          >
+            <h2 class="text-2xl font-bold text-[#00503c] mb-4">My Tasks</h2>
+            <div class="flex space-x-2 mb-4">
+              <input
+                id="taskInput"
+                type="text"
+                placeholder="Enter new task"
+                class="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#00503c]"
+              />
+              <button
+                onclick="addTask()"
+                class="bg-[#00503c] text-white px-4 py-2 rounded hover:bg-green-800"
+              >
+                Add
+              </button>
+            </div>
+            <ul id="taskList" class="space-y-2"></ul>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------LOGIN FORMS END------------------------------->
+    </main>
+
+    <footer class="text-[#00503c] py-8 w-[99vw]">
+      <div class="w-[99vw]">
+        <div class="flex flex-wrap justify-between items-center w-[99vw]">
+          <a
+            href="#"
+            class="flex items-center space-x-3 rtl:space-x-reverse mb-4 sm:mb-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="white"
+            >
+              <path
+                d="m826-585-56-56 30-31-128-128-31 30-57-57 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L104-233q-23-23-23-56.5t23-56.5l30-30 57 57-31 30 129 129 30-31 57 57-30 30Zm397-336 57-57-303-303-57 57 303 303ZM463-160l57-58-302-302-58 57 303 303Zm-6-234 110-109-64-64-109 110 63 63Zm63 290q-23 23-57 23t-57-23L104-406q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l63 63 110-110-63-62q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l303 303q23 23 23 56.5T857-441l-57 57q-23 23-57 23t-57-23l-62-63-110 110 63 63q23 23 23 56.5T577-161l-57 57Z"
+              />
+            </svg>
+            <span class="self-center text-2xl font-bold whitespace-nowrap"
+              >Pinoy Health Buddy</span
+            >
+          </a>
+          <div
+            class="flex flex-wrap items-center justify-center text-sm font-medium"
+          >
+            <a href="About.html" class="hover:underline m-3">About</a>
+            <a href="#" class="hover:underline m-3">Privacy Policy</a>
+            <a href="#" class="hover:underline m-3">Licensing</a>
+            <a href="Contacts.html" class="hover:underline m-3">Contact</a>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 opacity-50" />
+        <div class="text-center w-[99vw]">
+          <p class="text-sm">
+            © 2025
+            <a href="#" class="hover:underline font-bold">Pinoy Health Buddy™</a
+            >. All Rights Reserved.
+          </p>
+          <p class="text-sm mt-2">
+            Designed with by
+            <a href="#" class="hover:underline font-bold">JayScripts</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let editIndex = null;
+
+      function addTask() {
+        const input = document.getElementById("taskInput");
+        let task = input.value.trim();
+
+        // Basic input sanitization: remove HTML tags and encode special characters
+        task = task.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        task = task.replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+
+        if (!task) return;
+
+        if (editIndex !== null) {
+          document.querySelector(`#task-${editIndex} .task-text`).textContent =
+            task;
+          editIndex = null;
+        } else {
+          const list = document.getElementById("taskList");
+          const id = Date.now();
+          const li = document.createElement("li");
+          li.id = `task-${id}`;
+          li.className =
+            "flex items-center justify-between bg-gray-100 p-2 rounded";
+
+          li.innerHTML = `
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" onchange="removeTask('${id}')" class="accent-[#00503c]">
+        <span class="task-text">${task}</span>
+      </div>
+      <div class="space-x-1">
+        <button onclick="editTask('${id}')" class="text-blue-600 hover:underline text-sm">Edit</button>
+        <button onclick="deleteTask('${id}')" class="text-red-600 hover:underline text-sm">Delete</button>
+      </div>
+    `;
+          list.appendChild(li);
+        }
+
+        input.value = "";
+      }
+
+      function removeTask(id) {
+        document.getElementById(`task-${id}`).remove();
+      }
+
+      function editTask(id) {
+        const text = document.querySelector(
+          `#task-${id} .task-text`
+        ).textContent;
+        document.getElementById("taskInput").value = text;
+        editIndex = id;
+      }
+
+      function deleteTask(id) {
+        document.getElementById(`task-${id}`).remove();
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

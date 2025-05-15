@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awards Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="bg-[#f8f8f8] backdrop-blur shadow-2xl">
+      <div class="flex flex-wrap items-center justify-between p-5">
+        <a
+          href="#"
+          class="flex items-center justify-between space-x-3 rtl:space-x-reverse"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#00503c"
+          >
+            <path
+              d="m826-585-56-56 30-31-128-128-31 30-57-57 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L104-233q-23-23-23-56.5t23-56.5l30-30 57 57-31 30 129 129 30-31 57 57-30 30Zm397-336 57-57-303-303-57 57 303 303ZM463-160l57-58-302-302-58 57 303 303Zm-6-234 110-109-64-64-109 110 63 63Zm63 290q-23 23-57 23t-57-23L104-406q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l63 63 110-110-63-62q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l303 303q23 23 23 56.5T857-441l-57 57q-23 23-57 23t-57-23l-62-63-110 110 63 63q23 23 23 56.5T577-161l-57 57Z"
+            />
+          </svg>
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-[#00503c]"
+            >Pinoy Health Buddy</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="mainPage.html"
+                class="block py-2 px-3 text-[#00503c] bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="About.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="Services.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="profilePage.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="Contacts.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="h-[100vh]">
+      <!-- --------------------------------LIVE BG START------------------------------->
+
+      <div class="area" id="liveBG">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- --------------------------------LIVE BG END------------------------------->
+      <!----------------------------------LOGIN FORMS START------------------------------->
+
+      <div id="mainContainer">
+        <div
+          class="text-white flex flex-col landscape:justify-center items-center"
+        >
+          <p
+            class="text-[2.5rem] lg:text-[1.7rem] portrait:text-[1.5rem] text-shadow-black text-shadow-sm awardsText"
+          >
+            PINOY
+          </p>
+          <p
+            class="text-[2.5rem] lg:text-[1.7rem] portrait:text-[1.5rem] text-shadow-black text-shadow-sm awardsText"
+          >
+            HEALTH
+          </p>
+          <p
+            class="text-[2.5rem] lg:text-[1.7rem] portrait:text-[1.5rem] text-shadow-black text-shadow-sm awardsText"
+          >
+            BUDDY
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#FFFFFF"
+            class="portrait:w-[40px] w-[70px] awardsText"
+          >
+            <path
+              d="M480-160q75 0 127.5-52.5T660-340q0-75-52.5-127.5T480-520q-75 0-127.5 52.5T300-340q0 75 52.5 127.5T480-160ZM363-572q20-11 42.5-17.5T451-598L350-800H250l113 228Zm234 0 114-228H610l-85 170 19 38q14 4 27 8.5t26 11.5ZM256-208q-17-29-26.5-62.5T220-340q0-36 9.5-69.5T256-472q-42 14-69 49.5T160-340q0 47 27 82.5t69 49.5Zm448 0q42-14 69-49.5t27-82.5q0-47-27-82.5T704-472q17 29 26.5 62.5T740-340q0 36-9.5 69.5T704-208ZM480-80q-40 0-76.5-11.5T336-123q-9 2-18 2.5t-19 .5q-91 0-155-64T80-339q0-87 58-149t143-69L120-880h280l80 160 80-160h280L680-559q85 8 142.5 70T880-340q0 92-64 156t-156 64q-9 0-18.5-.5T623-123q-31 20-67 31.5T480-80Zm0-260ZM363-572 250-800l113 228Zm234 0 114-228-114 228ZM406-230l28-91-74-53h91l29-96 29 96h91l-74 53 28 91-74-56-74 56Z"
+            />
+          </svg>
+          <p class="text-shadow-black text-shadow-sm awardsText">
+            Simple. Healthy. Lokal.
+          </p>
+        </div>
+        <div
+          id="cardsContainer"
+          class="flex justify-center items-center flex-wrap mx-[15%] xl:mx-[20%]"
+        >
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Hydration Hero
+              </h5>
+            </div>
+          </div>
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Fitness Fanatic
+              </h5>
+            </div>
+          </div>
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Healthy Eater
+              </h5>
+            </div>
+          </div>
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Gulay Guru
+              </h5>
+            </div>
+          </div>
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Morning Motivator
+              </h5>
+            </div>
+          </div>
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Stretching Specialist
+              </h5>
+            </div>
+          </div>
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Step Master
+              </h5>
+            </div>
+          </div>
+          <div
+            class="awardsCards lg:w-[150px] lg:h-[150px] xl:h-[160px] xl:w-[160px] portrait:h-[90px] portrait:w-[90px] bg-white border border-gray-200 rounded-lg shadow-2xl m-2 p-1"
+          >
+            <div class="flex flex-col justify-center items-center p-1 relative">
+              <img
+                class="lg:w-[90px] lg:h-[90px] xl:w-[95] xl:h-[95] mb-3 rounded-full"
+                src="/src/assets/img/medal.avif"
+                alt="Meal Suggestion Image"
+              />
+              <h5
+                class="mb-1 xl:text-lg lg:text-md portrait:text-[8px] text-gray-900"
+              >
+                Mindful Meditator
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------LOGIN FORMS END------------------------------->
+    </main>
+
+    <footer class="text-[#00503c] py-8 w-[99vw]">
+      <div class="w-[99vw]">
+        <div class="flex flex-wrap justify-between items-center w-[99vw]">
+          <a
+            href="#"
+            class="flex items-center space-x-3 rtl:space-x-reverse mb-4 sm:mb-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="white"
+            >
+              <path
+                d="m826-585-56-56 30-31-128-128-31 30-57-57 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L104-233q-23-23-23-56.5t23-56.5l30-30 57 57-31 30 129 129 30-31 57 57-30 30Zm397-336 57-57-303-303-57 57 303 303ZM463-160l57-58-302-302-58 57 303 303Zm-6-234 110-109-64-64-109 110 63 63Zm63 290q-23 23-57 23t-57-23L104-406q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l63 63 110-110-63-62q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l303 303q23 23 23 56.5T857-441l-57 57q-23 23-57 23t-57-23l-62-63-110 110 63 63q23 23 23 56.5T577-161l-57 57Z"
+              />
+            </svg>
+            <span class="self-center text-2xl font-bold whitespace-nowrap"
+              >Pinoy Health Buddy</span
+            >
+          </a>
+          <div
+            class="flex flex-wrap items-center justify-center text-sm font-medium"
+          >
+            <a href="About.html" class="hover:underline m-3">About</a>
+            <a href="#" class="hover:underline m-3">Privacy Policy</a>
+            <a href="#" class="hover:underline m-3">Licensing</a>
+            <a href="Contacts.html" class="hover:underline m-3">Contact</a>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 opacity-50" />
+        <div class="text-center w-[99vw]">
+          <p class="text-sm">
+            © 2025
+            <a href="#" class="hover:underline font-bold">Pinoy Health Buddy™</a
+            >. All Rights Reserved.
+          </p>
+          <p class="text-sm mt-2">
+            Designed with by
+            <a href="#" class="hover:underline font-bold">JayScripts</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

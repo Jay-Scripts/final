@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="bg-[#f8f8f8] backdrop-blur shadow-2xl">
+      <div class="flex flex-wrap items-center justify-between p-5">
+        <a
+          href="#"
+          class="flex items-center justify-between space-x-3 rtl:space-x-reverse"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#00503c"
+          >
+            <path
+              d="m826-585-56-56 30-31-128-128-31 30-57-57 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L104-233q-23-23-23-56.5t23-56.5l30-30 57 57-31 30 129 129 30-31 57 57-30 30Zm397-336 57-57-303-303-57 57 303 303ZM463-160l57-58-302-302-58 57 303 303Zm-6-234 110-109-64-64-109 110 63 63Zm63 290q-23 23-57 23t-57-23L104-406q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l63 63 110-110-63-62q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l303 303q23 23 23 56.5T857-441l-57 57q-23 23-57 23t-57-23l-62-63-110 110 63 63q23 23 23 56.5T577-161l-57 57Z"
+            />
+          </svg>
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap text-[#00503c]"
+            >Pinoy Health Buddy</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="mainPage.html"
+                class="block py-2 px-3 text-[#00503c] bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="About.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="Services.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="profilePage.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-[#00503c] md:dark:hover:bg-transparent"
+                >Profile</a
+              >
+            </li>
+            <li>
+              <a
+                href="Contacts.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-[#00503c] md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="h-[100vh] flex flex-col items-center justify-center">
+      <!-- --------------------------------LIVE BG START------------------------------->
+      <div class="area" id="liveBG">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- --------------------------------LIVE BG END------------------------------->
+      <!----------------------------------SERVICES CONTENT START------------------------------->
+
+      <h1 class="text-4xl font-bold text-white m-6 text-center">Contact Us</h1>
+      <p class="text-lg text-white text-center m-5" id="contactsText">
+        We'd love to hear from you! Fill out the form below or reach out to us
+        directly.
+      </p>
+      <div
+        class="bg-white shadow-lg rounded-lg p-8 w-[80%] max-w-lg"
+        id="loginForm"
+      >
+        <form action="#" method="POST">
+          <div class="mb-4">
+            <label
+              for="name"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00503c]"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00503c]"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-700 mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00503c]"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[#00503c] text-white py-2 px-4 rounded-lg hover:bg-[#003d2e] transition-all"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+      <!----------------------------------SERVICES CONTENT END------------------------------->
+    </main>
+    <footer class="text-[#00503c] py-8 w-[99vw]">
+      <div class="w-[99vw]">
+        <div class="flex flex-wrap justify-between items-center w-[99vw]">
+          <a
+            href="#"
+            class="flex items-center space-x-3 rtl:space-x-reverse mb-4 sm:mb-0"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="white"
+            >
+              <path
+                d="m826-585-56-56 30-31-128-128-31 30-57-57 30-31q23-23 57-22.5t57 23.5l129 129q23 23 23 56.5T857-615l-31 30ZM346-104q-23 23-56.5 23T233-104L104-233q-23-23-23-56.5t23-56.5l30-30 57 57-31 30 129 129 30-31 57 57-30 30Zm397-336 57-57-303-303-57 57 303 303ZM463-160l57-58-302-302-58 57 303 303Zm-6-234 110-109-64-64-109 110 63 63Zm63 290q-23 23-57 23t-57-23L104-406q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l63 63 110-110-63-62q-23-23-23-57t23-57l57-57q23-23 56.5-23t56.5 23l303 303q23 23 23 56.5T857-441l-57 57q-23 23-57 23t-57-23l-62-63-110 110 63 63q23 23 23 56.5T577-161l-57 57Z"
+              />
+            </svg>
+            <span class="self-center text-2xl font-bold whitespace-nowrap"
+              >Pinoy Health Buddy</span
+            >
+          </a>
+          <div
+            class="flex flex-wrap items-center justify-center text-sm font-medium"
+          >
+            <a href="About.html" class="hover:underline m-3">About</a>
+            <a href="#" class="hover:underline m-3">Privacy Policy</a>
+            <a href="#" class="hover:underline m-3">Licensing</a>
+            <a href="Contacts.html" class="hover:underline m-3">Contact</a>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-200 opacity-50" />
+        <div class="text-center w-[99vw]">
+          <p class="text-sm">
+            © 2025
+            <a href="#" class="hover:underline font-bold">Pinoy Health Buddy™</a
+            >. All Rights Reserved.
+          </p>
+          <p class="text-sm mt-2">
+            Designed with by
+            <a href="#" class="hover:underline font-bold">JayScripts</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
